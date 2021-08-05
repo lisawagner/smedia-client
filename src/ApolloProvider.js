@@ -8,7 +8,7 @@ import {
 import { setContext } from "apollo-link-context";
 
 const httpLink = createHttpLink({
-  uri: "https://smedia-merng.herokuapp.com/",
+  uri: REACT_APP_URI,
 });
 
 const authLink = setContext(() => {
